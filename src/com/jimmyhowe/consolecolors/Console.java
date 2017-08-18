@@ -2,288 +2,299 @@ package com.jimmyhowe.consolecolors;
 
 public class Console
 {
-    private static void writeWithColor(String color, String message)
+    private static boolean autoPrint = false;
+
+    private static String withColor(String color, String message)
     {
-        System.out.println(color + message + Colors.RESET);
+        String s = color + message + Colors.RESET;
+
+        if(autoPrint) System.out.println(s);
+
+        return s;
     }
 
-    public static void black(String message)
+    public static void autoPrint()
     {
-        writeWithColor(Colors.BLACK, message);
+        autoPrint = true;
     }
 
-    public static void blackBold(String message)
+    public static String black(String message)
     {
-        writeWithColor(Colors.BLACK_BOLD, message);
+        return withColor(Colors.BLACK, message);
     }
 
-    public static void blackUnderlined(String message)
+    public static String blackBold(String message)
     {
-        writeWithColor(Colors.BLACK_UNDERLINED, message);
+        return withColor(Colors.BLACK_BOLD, message);
     }
 
-    public static void blackBackground(String message)
+    public static String blackUnderlined(String message)
     {
-        writeWithColor(Colors.BLACK_BACKGROUND, message);
+        return withColor(Colors.BLACK_UNDERLINED, message);
     }
 
-    public static void blackBright(String message)
+    public static String blackBackground(String message)
     {
-        writeWithColor(Colors.BLACK_BRIGHT, message);
+        return withColor(Colors.BLACK_BACKGROUND, message);
     }
 
-    public static void blackBoldBright(String message)
+    public static String blackBright(String message)
     {
-        writeWithColor(Colors.BLACK_BOLD_BRIGHT, message);
+        return withColor(Colors.BLACK_BRIGHT, message);
     }
 
-    public static void blackBackgroundBright(String message)
+    public static String blackBoldBright(String message)
     {
-        writeWithColor(Colors.BLACK_BACKGROUND_BRIGHT, message);
+        return withColor(Colors.BLACK_BOLD_BRIGHT, message);
     }
 
-    public static void red(String message)
+    public static String blackBackgroundBright(String message)
     {
-        writeWithColor(Colors.RED, message);
+        return withColor(Colors.BLACK_BACKGROUND_BRIGHT, message);
     }
 
-    public static void redBold(String message)
+    public static String red(String message)
     {
-        writeWithColor(Colors.RED_BOLD, message);
+        return withColor(Colors.RED, message);
     }
 
-    public static void redUnderlined(String message)
+    public static String redBold(String message)
     {
-        writeWithColor(Colors.RED_UNDERLINED, message);
+        return withColor(Colors.RED_BOLD, message);
     }
 
-    public static void redBackground(String message)
+    public static String redUnderlined(String message)
     {
-        writeWithColor(Colors.RED_BACKGROUND, message);
+        return withColor(Colors.RED_UNDERLINED, message);
     }
 
-    public static void redBright(String message)
+    public static String redBackground(String message)
     {
-        writeWithColor(Colors.RED_BRIGHT, message);
+        return withColor(Colors.RED_BACKGROUND, message);
     }
 
-    public static void redBoldBright(String message)
+    public static String redBright(String message)
     {
-        writeWithColor(Colors.RED_BOLD_BRIGHT, message);
+        return withColor(Colors.RED_BRIGHT, message);
     }
 
-    public static void redBackgroundBright(String message)
+    public static String redBoldBright(String message)
     {
-        writeWithColor(Colors.RED_BACKGROUND_BRIGHT, message);
+        return withColor(Colors.RED_BOLD_BRIGHT, message);
     }
 
-    public static void green(String message)
+    public static String redBackgroundBright(String message)
     {
-        writeWithColor(Colors.GREEN, message);
+        return withColor(Colors.RED_BACKGROUND_BRIGHT, message);
     }
 
-    public static void greenBold(String message)
+    public static String green(String message)
     {
-        writeWithColor(Colors.GREEN_BOLD, message);
+        return withColor(Colors.GREEN, message);
     }
 
-    public static void greenUnderlined(String message)
+    public static String greenBold(String message)
     {
-        writeWithColor(Colors.GREEN_UNDERLINED, message);
+        return withColor(Colors.GREEN_BOLD, message);
     }
 
-    public static void greenBackground(String message)
+    public static String greenUnderlined(String message)
     {
-        writeWithColor(Colors.GREEN_BACKGROUND, message);
+        return withColor(Colors.GREEN_UNDERLINED, message);
     }
 
-    public static void greenBright(String message)
+    public static String greenBackground(String message)
     {
-        writeWithColor(Colors.GREEN_BRIGHT, message);
+        return withColor(Colors.GREEN_BACKGROUND, message);
     }
 
-    public static void greenBoldBright(String message)
+    public static String greenBright(String message)
     {
-        writeWithColor(Colors.GREEN_BOLD_BRIGHT, message);
+        return withColor(Colors.GREEN_BRIGHT, message);
     }
 
-    public static void greenBackgroundBright(String message)
+    public static String greenBoldBright(String message)
     {
-        writeWithColor(Colors.GREEN_BACKGROUND_BRIGHT, message);
+        return withColor(Colors.GREEN_BOLD_BRIGHT, message);
     }
 
-    public static void yellow(String message)
+    public static String greenBackgroundBright(String message)
     {
-        writeWithColor(Colors.YELLOW, message);
+        return withColor(Colors.GREEN_BACKGROUND_BRIGHT, message);
     }
 
-    public static void yellowBold(String message)
+    public static String yellow(String message)
     {
-        writeWithColor(Colors.YELLOW_BOLD, message);
+        return withColor(Colors.YELLOW, message);
     }
 
-    public static void yellowUnderlined(String message)
+    public static String yellowBold(String message)
     {
-        writeWithColor(Colors.YELLOW_UNDERLINED, message);
+        return withColor(Colors.YELLOW_BOLD, message);
     }
 
-    public static void yellowBackground(String message)
+    public static String yellowUnderlined(String message)
     {
-        writeWithColor(Colors.YELLOW_BACKGROUND, message);
+        return withColor(Colors.YELLOW_UNDERLINED, message);
     }
 
-    public static void yellowBright(String message)
+    public static String yellowBackground(String message)
     {
-        writeWithColor(Colors.YELLOW_BRIGHT, message);
+        return withColor(Colors.YELLOW_BACKGROUND, message);
     }
 
-    public static void yellowBoldBright(String message)
+    public static String yellowBright(String message)
     {
-        writeWithColor(Colors.YELLOW_BOLD_BRIGHT, message);
+        return withColor(Colors.YELLOW_BRIGHT, message);
     }
 
-    public static void yellowBackgroundBright(String message)
+    public static String yellowBoldBright(String message)
     {
-        writeWithColor(Colors.YELLOW_BACKGROUND_BRIGHT, message);
+        return withColor(Colors.YELLOW_BOLD_BRIGHT, message);
     }
 
-    public static void blue(String message)
+    public static String yellowBackgroundBright(String message)
     {
-        writeWithColor(Colors.BLUE, message);
+        return withColor(Colors.YELLOW_BACKGROUND_BRIGHT, message);
     }
 
-    public static void blueBold(String message)
+    public static String blue(String message)
     {
-        writeWithColor(Colors.BLUE_BOLD, message);
+        return withColor(Colors.BLUE, message);
     }
 
-    public static void blueUnderlined(String message)
+    public static String blueBold(String message)
     {
-        writeWithColor(Colors.BLUE_UNDERLINED, message);
+        return withColor(Colors.BLUE_BOLD, message);
     }
 
-    public static void blueBackground(String message)
+    public static String blueUnderlined(String message)
     {
-        writeWithColor(Colors.BLUE_BACKGROUND, message);
+        return withColor(Colors.BLUE_UNDERLINED, message);
     }
 
-    public static void blueBright(String message)
+    public static String blueBackground(String message)
     {
-        writeWithColor(Colors.BLUE_BRIGHT, message);
+        return withColor(Colors.BLUE_BACKGROUND, message);
     }
 
-    public static void blueBoldBright(String message)
+    public static String blueBright(String message)
     {
-        writeWithColor(Colors.BLUE_BOLD_BRIGHT, message);
+        return withColor(Colors.BLUE_BRIGHT, message);
     }
 
-    public static void blueBackgroundBright(String message)
+    public static String blueBoldBright(String message)
     {
-        writeWithColor(Colors.BLUE_BACKGROUND_BRIGHT, message);
+        return withColor(Colors.BLUE_BOLD_BRIGHT, message);
     }
 
-    public static void purple(String message)
+    public static String blueBackgroundBright(String message)
     {
-        writeWithColor(Colors.PURPLE, message);
+        return withColor(Colors.BLUE_BACKGROUND_BRIGHT, message);
     }
 
-    public static void purpleBold(String message)
+    public static String purple(String message)
     {
-        writeWithColor(Colors.PURPLE_BOLD, message);
+        return withColor(Colors.PURPLE, message);
     }
 
-    public static void purpleUnderlined(String message)
+    public static String purpleBold(String message)
     {
-        writeWithColor(Colors.PURPLE_UNDERLINED, message);
+        return withColor(Colors.PURPLE_BOLD, message);
     }
 
-    public static void purpleBackground(String message)
+    public static String purpleUnderlined(String message)
     {
-        writeWithColor(Colors.PURPLE_BACKGROUND, message);
+        return withColor(Colors.PURPLE_UNDERLINED, message);
     }
 
-    public static void purpleBright(String message)
+    public static String purpleBackground(String message)
     {
-        writeWithColor(Colors.PURPLE_BRIGHT, message);
+        return withColor(Colors.PURPLE_BACKGROUND, message);
     }
 
-    public static void purpleBoldBright(String message)
+    public static String purpleBright(String message)
     {
-        writeWithColor(Colors.PURPLE_BOLD_BRIGHT, message);
+        return withColor(Colors.PURPLE_BRIGHT, message);
     }
 
-    public static void purpleBackgroundBright(String message)
+    public static String purpleBoldBright(String message)
     {
-        writeWithColor(Colors.PURPLE_BACKGROUND_BRIGHT, message);
+        return withColor(Colors.PURPLE_BOLD_BRIGHT, message);
     }
 
-    public static void cyan(String message)
+    public static String purpleBackgroundBright(String message)
     {
-        writeWithColor(Colors.CYAN, message);
+        return withColor(Colors.PURPLE_BACKGROUND_BRIGHT, message);
     }
 
-    public static void cyanBold(String message)
+    public static String cyan(String message)
     {
-        writeWithColor(Colors.CYAN_BOLD, message);
+        return withColor(Colors.CYAN, message);
     }
 
-    public static void cyanUnderlined(String message)
+    public static String cyanBold(String message)
     {
-        writeWithColor(Colors.CYAN_UNDERLINED, message);
+        return withColor(Colors.CYAN_BOLD, message);
     }
 
-    public static void cyanBackground(String message)
+    public static String cyanUnderlined(String message)
     {
-        writeWithColor(Colors.CYAN_BACKGROUND, message);
+        return withColor(Colors.CYAN_UNDERLINED, message);
     }
 
-    public static void cyanBright(String message)
+    public static String cyanBackground(String message)
     {
-        writeWithColor(Colors.CYAN_BRIGHT, message);
+        return withColor(Colors.CYAN_BACKGROUND, message);
     }
 
-    public static void cyanBoldBright(String message)
+    public static String cyanBright(String message)
     {
-        writeWithColor(Colors.CYAN_BOLD_BRIGHT, message);
+        return withColor(Colors.CYAN_BRIGHT, message);
     }
 
-    public static void cyanBackgroundBright(String message)
+    public static String cyanBoldBright(String message)
     {
-        writeWithColor(Colors.CYAN_BACKGROUND_BRIGHT, message);
+        return withColor(Colors.CYAN_BOLD_BRIGHT, message);
     }
 
-    public static void white(String message)
+    public static String cyanBackgroundBright(String message)
     {
-        writeWithColor(Colors.WHITE, message);
+        return withColor(Colors.CYAN_BACKGROUND_BRIGHT, message);
     }
 
-    public static void whiteBold(String message)
+    public static String white(String message)
     {
-        writeWithColor(Colors.WHITE_BOLD, message);
+        return withColor(Colors.WHITE, message);
     }
 
-    public static void whiteUnderlined(String message)
+    public static String whiteBold(String message)
     {
-        writeWithColor(Colors.WHITE_UNDERLINED, message);
+        return withColor(Colors.WHITE_BOLD, message);
     }
 
-    public static void whiteBackground(String message)
+    public static String whiteUnderlined(String message)
     {
-        writeWithColor(Colors.WHITE_BACKGROUND, message);
+        return withColor(Colors.WHITE_UNDERLINED, message);
     }
 
-    public static void whiteBright(String message)
+    public static String whiteBackground(String message)
     {
-        writeWithColor(Colors.WHITE_BRIGHT, message);
+        return withColor(Colors.WHITE_BACKGROUND, message);
     }
 
-    public static void whiteBoldBright(String message)
+    public static String whiteBright(String message)
     {
-        writeWithColor(Colors.WHITE_BOLD_BRIGHT, message);
+        return withColor(Colors.WHITE_BRIGHT, message);
     }
 
-    public static void whiteBackgroundBright(String message)
+    public static String whiteBoldBright(String message)
     {
-        writeWithColor(Colors.WHITE_BACKGROUND_BRIGHT, message);
+        return withColor(Colors.WHITE_BOLD_BRIGHT, message);
+    }
+
+    public static String whiteBackgroundBright(String message)
+    {
+        return withColor(Colors.WHITE_BACKGROUND_BRIGHT, message);
     }
 }

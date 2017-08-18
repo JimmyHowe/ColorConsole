@@ -4,6 +4,11 @@ import org.junit.Test;
 
 public class ConsoleTest
 {
+    public ConsoleTest()
+    {
+        Console.autoPrint();
+    }
+
     @Test
     public void blacks()
     {
