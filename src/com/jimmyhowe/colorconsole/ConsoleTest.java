@@ -1,4 +1,4 @@
-package com.jimmyhowe.consolecolors;
+package com.jimmyhowe.colorconsole;
 
 import org.junit.Test;
 
