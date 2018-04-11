@@ -24,19 +24,36 @@
 
 package com.jimmyhowe.colorconsole;
 
+/**
+ * Console
+ */
 public class Console
 {
+    /**
+     * Prints the message to the console
+     */
     private static boolean autoPrint = false;
 
+    /**
+     * Helper method to print with color
+     *
+     * @param color   Color
+     * @param message Message to be displayed
+     *
+     * @return Message surrounded by color characters
+     */
     private static String withColor(String color, String message)
     {
         String s = color + message + Colors.RESET;
 
-        if(autoPrint) System.out.println(s);
+        if ( autoPrint ) System.out.println(s);
 
         return s;
     }
 
+    /**
+     * Auto prints to the console
+     */
     public static void autoPrint()
     {
         autoPrint = true;
